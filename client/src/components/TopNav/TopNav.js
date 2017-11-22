@@ -1,20 +1,29 @@
 import React from "react";
-
+import './TopNav.css';
 
 
 const TopNav = props =>
-<div>
-	<nav>
-    <div className="nav-wrapper">
-      <a className="brand-logo right">{props.title}</a>
-      <ul id="nav-mobile" className="left hide-on-med-and-down">
-        <li><a href="#">Sign in</a></li>
-        <li><a>Getting Started</a></li>
-        <li><a></a></li>
+	<nav className="navbar navbar-inverse">
+  <div className="container-fluid">
+    <div className="navbar-header">
+      <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span className="icon-bar"></span>
+        <span className="icon-bar"></span>
+        <span className="icon-bar"></span>                        
+     </button>
+      <a className="navbar-brand" href="#">Tickr</a>
+    </div>
+    <div className="collapse navbar-collapse" id="myNavbar">
+      <ul className="nav navbar-nav">
+        <li className="active"><a href="#">Home</a></li>
+        <li><a href="#">Getting Started</a></li>
+      </ul>
+      <ul className="nav navbar-nav navbar-right">
+        <li><a href="#"><span className="glyphicon glyphicon-log-in"></span> Login</a></li>
       </ul>
     </div>
-  </nav>
-	</div>;
+  </div>
+</nav>;
 
 
 export default TopNav;
