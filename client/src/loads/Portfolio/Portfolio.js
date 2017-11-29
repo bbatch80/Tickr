@@ -36,7 +36,7 @@ render() {
 			     
 			     <p></p>
 			     </div>
-			     
+			     Hello {username}, 
 
 			     </div>
 			  </div>

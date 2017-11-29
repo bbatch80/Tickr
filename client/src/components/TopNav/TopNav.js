@@ -1,6 +1,6 @@
 import React from "react";
 import './TopNav.css';
-import '../Modal';
+import Modal from '../Modal';
 
 
 
