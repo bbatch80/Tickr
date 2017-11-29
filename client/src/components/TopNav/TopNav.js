@@ -1,9 +1,14 @@
 import React from "react";
 import './TopNav.css';
+import '../Modal';
 
 
-const TopNav = props =>
-	<nav className="navbar navbar-inverse">
+
+class TopNav extends React.Component {
+
+  render(){
+
+	return <nav className="navbar navbar-inverse">
   <div className="container-fluid">
     <div className="navbar-header">
       <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -11,19 +16,20 @@ const TopNav = props =>
         <span className="icon-bar"></span>
         <span className="icon-bar"></span>                        
      </button>
-      <a className="navbar-brand" href="#">Tickr</a>
+      <a className="navbar-brand" href="/">Tickr</a>
     </div>
     <div className="collapse navbar-collapse" id="myNavbar">
       <ul className="nav navbar-nav">
-        <li className="active"><a href="#">Home</a></li>
         <li><a href="#">Getting Started</a></li>
       </ul>
       <ul className="nav navbar-nav navbar-right">
-        <li><a href="#"><span className="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><Modal/></li>
       </ul>
     </div>
   </div>
 </nav>;
+}
+}
 
 
 export default TopNav;

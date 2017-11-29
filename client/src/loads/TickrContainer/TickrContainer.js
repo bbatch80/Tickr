@@ -26,8 +26,7 @@ render() {
 			  <div className="col-sm-10 text-left" style={{height: 900}}>
       		    <h1>Welcome to Tickr</h1>
     
-                <p>Tickr is the newest source of of stock market content on the web.  Our goal is to introduce beginners to the ways of the stock market. 
-                The stock market can be an intimidating labyrinth, but with Tickr on your side you will be a whiz in no time. </p>
+                <p>Danny: Add registration form here</p>
       	      </div>
 			</div>
 		  </div>
