@@ -9,12 +9,16 @@ export default {
   getPortfolio: function(username) {
     return axios.get("/api/portfolios/" + username);
   },
+
+  saveUser: function(username) {
+    return axios.post("/api/portfolios")
+  },
   // // Deletes the book with the given id
   // deleteBook: function(id) {
   //   return axios.delete("/api/books/" + id);
   // },
-  // // Saves a book to the database
-  // saveBook: function(bookData) {
-  //   return axios.post("/api/books", bookData);
-  // }
+  // Saves a book to the database
+  saveStock: function(stock) {
+    return axios.post("/api/portfolios/stock", stock);
+  }
 };

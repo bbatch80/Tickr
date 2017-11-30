@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import Container from "../../components/Container";
-import Row from "../../components/Row";
-import TopNav from "../../components/TopNav"
 import LeftNav from "../../components/LeftNav"
 
 

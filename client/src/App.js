@@ -18,21 +18,22 @@ class app extends React.Component {
   }
   
   // App "actions" (functions that modify state)
-  signIn(username, password) {
-    // This is where you would call Firebase, an API etc...
-    // calling setState will re-render the entire app (efficiently!)
-    this.setState({
-      user: {
-        username,
-        password,
-      }
-    })
-  }
+  // signIn(username, password) {
+  //   // This is where you would call Firebase, an API etc...
+  //   // calling setState will re-render the entire app (efficiently!)
+  //     API.saveUser({
+  //       user: this.state.user;
+  //     })
+  //       .then(res => this.loadPortfolio())
+  //       .catch(err => console.log(err));
+  //   }
+  // };
+    
   
-  signOut() {
-    // clear out user from state
-    this.setState({user: null})
-  }
+  // signOut() {
+  //   // clear out user from state
+  //   this.setState({user: null})
+  // }
 
 
 render() {
